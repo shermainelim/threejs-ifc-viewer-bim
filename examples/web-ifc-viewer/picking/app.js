@@ -44,7 +44,7 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("express_803");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close");
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -54,6 +54,7 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
+  console.log("clicked");
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -73,7 +74,7 @@ var modal = document.getElementById("myModal2");
 var btn = document.getElementById("express_350");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close2")[0];
+var span = document.getElementsByClassName("close");
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
